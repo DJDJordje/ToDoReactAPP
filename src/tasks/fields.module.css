@@ -1,0 +1,396 @@
+.fieldsConainer {
+  display: inline-grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  width: 40rem;
+  height: 40rem;
+  transform: translateY(30%);
+}
+
+.field {
+  background-color: #55b5f5b5;
+  border: 5px solid #fff3f3c4;
+  width: 45%;
+  height: 15%;
+  border-radius: 2rem;
+}
+.fieldBased {
+  border: 5px solid #fff3f3c4;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.transformedFields {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: calc(300rem / 4);
+  gap: 1rem 1rem;
+  position: absolute;
+  left: 8rem;
+  transform: translateY(10%);
+  transition: ease-out 1s;
+}
+
+.field h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: white;
+  transform: translateY(160%);
+}
+.fieldBased h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  color: white;
+  transform: translateY(160%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.hobby {
+  background-color: rgb(186, 223, 53);
+}
+.hobby:hover {
+  animation: animationHobbyBased 5s infinite;
+}
+.hobbyActive {
+  background-color: rgb(186, 223, 53);
+}
+.hobbyActive:hover {
+  opacity: 0.5;
+  animation: animationHobbyField 5s infinite;
+}
+.HobbyField {
+  animation: animationHobbyField 5s infinite;
+}
+
+.work {
+  background-color: rgb(233, 97, 73);
+}
+.work:hover {
+  animation: animationWorkBased 6s infinite;
+}
+.workActive {
+  background-color: rgb(233, 97, 73);
+}
+.workActive:hover {
+  opacity: 0.5;
+  animation: animationWorkFiled 6s infinite;
+}
+.WorkField {
+  animation: animationWorkFiled 6s infinite;
+}
+
+.friends {
+  opacity: 0.9;
+  background-color: rgb(45, 189, 175);
+}
+.friends:hover {
+  animation: animationFriendsBased 4s infinite;
+}
+.friendsActive {
+  opacity: 0.9;
+  background-color: rgb(45, 189, 175);
+}
+.friendsActive:hover {
+  opacity: 0.5;
+  animation: animationFriendsField 4s infinite;
+}
+.FriendsField {
+  animation: animationFriendsField 4s infinite;
+}
+.events {
+  background-color: rgb(184, 224, 243);
+}
+.events:hover {
+  animation: animationEventsBased 4s infinite;
+}
+.eventsActive {
+  background-color: rgb(184, 224, 243);
+}
+.eventsActive:hover {
+  opacity: 0.5;
+  animation: animationEventField 4s infinite;
+}
+.EventsField {
+  animation: animationEventField 4s infinite;
+}
+
+@keyframes animationWorkBased {
+  0% {
+    background-position: center;
+    background-color: rgb(234, 234, 236);
+  }
+  20% {
+    background-position: center;
+    background-color: rgb(234, 234, 234);
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/travel.png');
+    background-size: contain;
+  }
+  40% {
+    background-position: center;
+    background-color: rgb(234, 234, 236);
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/deal.png');
+    background-size: contain;
+  }
+  60% {
+    background-position: center;
+    background-color: rgb(234, 234, 236);
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/home.png');
+    background-size: contain;
+  }
+  80% {
+    background-position: center;
+    background-color: rgb(234, 234, 236);
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/money.png');
+    background-size: contain;
+  }
+  100% {
+    background-position: center;
+    background-color: rgb(234, 234, 236);
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/economy.png');
+    background-size: contain;
+  }
+}
+@keyframes animationWorkFiled {
+  0% {
+    background-position: center;
+    background-color: rgb(234, 234, 236);
+  }
+  20% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/travel.png');
+    background-size: contain;
+  }
+  40% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/deal.png');
+    background-size: contain;
+  }
+  60% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/home.png');
+    background-size: contain;
+  }
+  80% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/money.png');
+    background-size: contain;
+  }
+  100% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/work/economy.png');
+    background-size: contain;
+  }
+}
+@keyframes animationHobbyField {
+  0% {
+    background-position: center;
+    background-color: white;
+  }
+  25% {
+    background-position: center;
+    background-image: url('../pictures/hobby/art.png');
+    background-size: 8.49rem;
+  }
+  50% {
+    background-position: center;
+    background-image: url('../pictures/hobby/mindGames.png');
+    background-size: 8.49rem;
+  }
+  75% {
+    background-position: center;
+    background-image: url('../pictures/hobby/reading.png');
+    background-size: 8.49rem;
+  }
+  100% {
+    background-position: center;
+    background-image: url('../pictures/hobby/sport.png');
+    background-size: 8.49rem;
+  }
+}
+@keyframes animationHobbyBased {
+  0% {
+    background-position: center;
+    background-color: white;
+  }
+  25% {
+    background-position: center;
+    background-color: white;
+    background-image: url('../pictures/hobby/art.png');
+    background-size: 16rem;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-position: center;
+    background-color: white;
+    background-image: url('../pictures/hobby/mindGames.png');
+    background-size: 16rem;
+    background-repeat: no-repeat;
+  }
+  75% {
+    background-position: center;
+    background-color: white;
+    background-image: url('../pictures/hobby/reading.png');
+    background-size: 16rem;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-position: center;
+    background-color: white;
+    background-image: url('../pictures/hobby/sport.png');
+    background-size: 16rem;
+    background-repeat: no-repeat;
+  }
+}
+@keyframes animationEventField {
+  0% {
+    background-position: center;
+    background-color: white;
+  }
+  25% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/events/barbeque.png');
+    background-size: contain;
+  }
+  50% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/events/dipl.png');
+    background-size: contain;
+  }
+  75% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/events/singer.png');
+    background-size: contain;
+  }
+  100% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/events/sport.png');
+    background-size: contain;
+  }
+}
+@keyframes animationEventsBased {
+  0% {
+    background-position: center;
+    background-color: white;
+  }
+  25% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../pictures/events/barbeque.png');
+    background-size: contain;
+  }
+  50% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../pictures/events/dipl.png');
+    background-size: contain;
+  }
+  75% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../pictures/events/singer.png');
+    background-size: contain;
+  }
+  100% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../pictures/events/sport.png');
+    background-size: contain;
+  }
+}
+@keyframes animationFriendsField {
+  0% {
+    background-position: center;
+    background-color: white;
+  }
+  25% {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-image: url('../pictures/friends/2friends.png');
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-image: url('../pictures/friends/friendsCircle.png');
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-image: url('../pictures/friends/shake.png');
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes animationFriendsBased {
+  0% {
+    background-position: center;
+    background-color: white;
+  }
+  25% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/friends/2friends.png');
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/friends/friendsCircle.png');
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url('../pictures/friends/shake.png');
+    background-position: center;
+    background-size: contain;
+  }
+}
